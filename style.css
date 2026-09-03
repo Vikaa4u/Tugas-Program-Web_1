@@ -1,0 +1,284 @@
+/* =========================
+   DASAR WEBSITE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #e8e6f5;
+
+    color: #222;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background-color: white;
+
+    border: 1px solid #65784f;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto {
+    background-color: #899b78;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.foto img {
+    width: 70%;
+
+    max-width: 700px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+.judul {
+    background-color: #65784f;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-top: 1px solid white;
+
+    border-bottom: 1px solid white;
+}
+
+.judul h1 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   BAGIAN ISI
+========================= */
+
+.isi {
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+}
+
+
+/* =========================
+   BAHAN
+========================= */
+
+.bahan {
+    background-color: #edf2e5;
+
+    padding: 30px;
+
+    border-right: 1px solid #65784f;
+}
+
+.bahan h2 {
+    color: #65784f;
+
+    font-size: 32px;
+
+    margin-top: 5px;
+}
+
+.bahan ul {
+    padding-left: 30px;
+}
+
+.bahan li {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESEP
+========================= */
+
+.resep {
+    padding: 30px;
+
+    background-color: #ffffff;
+}
+
+.resep h2 {
+    color: #65784f;
+
+    font-size: 34px;
+
+    margin-top: 5px;
+}
+
+.resep h3 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    line-height: 1.5;
+}
+
+.resep ul {
+    padding-left: 30px;
+}
+
+.resep li {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #65784f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid white;
+}
+
+footer h3 {
+    margin: 0 0 8px 0;
+
+    font-size: 24px;
+}
+
+footer p {
+    margin: 6px 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    /* FOTO */
+
+    .foto {
+        padding: 15px;
+    }
+
+    .foto img {
+        width: 90%;
+    }
+
+
+    /* JUDUL */
+
+    .judul {
+        padding: 20px 10px;
+    }
+
+    .judul h1 {
+        font-size: 22px;
+    }
+
+
+    /* ISI */
+
+    .isi {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* BAHAN */
+
+    .bahan {
+        border-right: none;
+
+        border-bottom: 1px solid #65784f;
+    }
+
+    .bahan h2 {
+        font-size: 28px;
+    }
+
+    .bahan li {
+        font-size: 17px;
+    }
+
+
+    /* RESEP */
+
+    .resep h2 {
+        font-size: 28px;
+    }
+
+    .resep h3 {
+        font-size: 21px;
+    }
+
+    .resep li {
+        font-size: 17px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
